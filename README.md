@@ -1,21 +1,25 @@
-# Sythetic
+<div align="center">
+    <h1><a href="https://github.com/hlsiira/myth">Myth</a> - A mesmerizing pulsing hexagonal background.</h1>
+</div>
 
-Simple pulsing hexagonal background for websites by Liam Siira.
+<div align="center">
 
-Demo: [Click Here](https://hlsiira.github.io/synthetic/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+</div>
 
 ## Installation
 
-Add synthetic.min.js to your websites sources and the CSS to your site. It will run on document load, and either create it's own canvas element, or use one you've predefined.
+Add myth.min.js to your websites sources and the CSS to your site. It will run on document load, and either create it's own canvas element, or use one you've predefined.
 
 ```html
-	<canvas id="synthetic"></canvas>
+	<canvas id="myth"></canvas>
 
-	<script src="synthetic.min.js"></script>
+	<script src="myth.min.js"></script>
 ```
 
 ```css
-#synthetic {
+#myth {
 	left: -20px;
 	/*opacity: .15;*/
 	position: fixed;
@@ -49,6 +53,3 @@ Please make sure to update tests as appropriate.
 
 ## Source
 Created from [Hexagons.js by ZackTheHuman](https://gist.github.com/zackthehuman/1867663)
-
-## License
-[The Hippocratic License](https://firstdonoharm.dev/)

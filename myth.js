@@ -1,4 +1,4 @@
-//	Synthetic | Simple pulsing hexagonal background for websites
+//	Myth | Simple pulsing hexagonal background for websites
 //	(c) 2020 Liam Siira (liam@siira.us)
 //	Created from Hexagons.js by ZackTheHuman (https://gist.github.com/zackthehuman/1867663)
 
@@ -10,13 +10,13 @@
 	} else if (typeof exports === 'object') {
 		module.exports = factory(root);
 	} else {
-		root.synthetic = factory(root);
+		root.myth = factory(root);
 	}
 })(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, function(window) {
 
 	'use strict';
 	
-	// 	<canvas id="synthetic"></canvas>
+	// 	<canvas id="myth"></canvas>
 
 
 	let rndColor = [],
@@ -33,7 +33,7 @@
 		return (rnd * max) << 0;
 	}
 
-	function drawSynthetic() {
+	function drawMyth() {
 		var hex = {
 			angle: 0.523, // 30 degrees in radians
 			sideLength: 20,
@@ -101,24 +101,24 @@
 	}
 
 
-	const synthetic = {
+	const myth = {
 
 		init: function(options) {
-			rndColor = localStorage.getItem('synthetic');
+			rndColor = localStorage.getItem('myth');
 			if (!rndColor || typeof(rndColor) !== 'string') {
 				rndColor = [];
 				for (var i = 0; i < 5000; ++i) {
 					rndColor.push(colors[sRnd(4)]);
 				}
-				localStorage.setItem('synthetic', JSON.stringify(rndColor));
+				localStorage.setItem('myth', JSON.stringify(rndColor));
 			} else {
 				rndColor = JSON.parse(rndColor);
 			}
-			canvas = document.getElementById('synthetic');
-			drawSynthetic();
+			canvas = document.getElementById('myth');
+			drawMyth();
 		}
 	};
 
-	return synthetic;
+	return myth;
 
 });
